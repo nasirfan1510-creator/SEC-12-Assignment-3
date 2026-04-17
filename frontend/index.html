@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NFC - Nas Fried Chicken</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🍗 Nas's Fried Chicken</h1>
+
+<div id="menu">
+    <h2>Menu</h2>
+    <button onclick="addItem('Fried Chicken',8)">Fried Chicken - RM8</button><br><br>
+    <button onclick="addItem('Burger',6)">Burger - RM6</button><br><br>
+    <button onclick="addItem('Fries',4)">Fries - RM4</button><br><br>
+</div>
+
+<hr>
+
+<div id="cart">
+    <h2>Cart</h2>
+    <ul id="cartList"></ul>
+    <h3>Total: RM <span id="total">0</span></h3>
+    <button onclick="checkout()">Checkout</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
