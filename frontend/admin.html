@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - Orders</title>
+</head>
+<body>
+
+<h1>Admin Dashboard</h1>
+
+<ul id="ordersList"></ul>
+
+<script>
+fetch('http://localhost:3000/orders')
+.then(res => res.json())
+.then(data => {
+    const list = document.getElementById("ordersList");
+
+    data.forEach(order => {
+        let li = document.createElement("li");
+
+        li.textContent = 
+        "RM " + order.total + " | " + order.status;
+
+        list.appendChild(li);
+    });
+});
+</script>
+
+data.filter(order => order.status === "Preparing")
+
+</body>
+</html>
